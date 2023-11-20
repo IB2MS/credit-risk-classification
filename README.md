@@ -1,3 +1,4 @@
+### Classification Report
 
 ## Purpose of the analysis:
 
@@ -47,14 +48,13 @@ To mitigate risks, the lending company aims to minimize the occurrence of false 
 
 ## Machine Learning Model 1 with imbalanced data:
 
-56 false positives (actual value: healthy, predicted value: non-healthy)
-102 false negatives (actual value: non-healthy, predicted value: healthy)
+- 56 false positives (actual value: healthy, predicted value: non-healthy)
+- 102 false negatives (actual value: non-healthy, predicted value: healthy)
 
 ## Machine Learning Model 2 with balanced data:
 
-4 false positives (actual value: healthy, predicted value: non-healthy)
-116 false negatives (actual value: non-healthy, predicted value: healthy)
-
+- 4 false positives (actual value: healthy, predicted value: non-healthy)
+- 116 false negatives (actual value: non-healthy, predicted value: healthy)
 
 Upon analyzing the results, it is advisable to favor Machine Learning Model 2, which was trained on balanced data. This recommendation is based on its notable reduction in false positives (4 instances of healthy loans mistakenly classified as non-healthy) compared to Machine Learning Model 1 (56 instances). The improvement in accuracy, particularly in distinguishing between healthy and non-healthy loans, reinforces the efficacy of utilizing balanced data in training machine learning models for enhanced performance in real-world scenarios.
 Also , It's important to note that while machine learning models can enhance credit risk assessment, they are not foolproof, and human judgment and expertise remain crucial in the decision-making process. Additionally, ethical considerations, fairness, and transparency in the use of these models are important to ensure responsible lending practices.
