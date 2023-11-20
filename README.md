@@ -1,14 +1,8 @@
-# Module 12 Report Template
 
-## Overview of the Analysis
-
-
-*  Purpose of the analysis:
+## Purpose of the analysis:
 
 In the context of lending institutions, risk refers to the potential for financial loss or negative impact resulting from uncertainties in the borrower's ability to repay the loan or return the asset. Lenders face various types of risks, including credit risk, market risk, operational risk, and more. Credit risk is a significant concern for lending institutions and is associated with the likelihood that a borrower may default on their loan obligations. To assess and manage credit risk, lending institutions often use machine learning (ML) models to predict the likelihood of a borrower being "risky" or having a higher probability of defaulting on their loan. In this study, we will employ Machine Learning to examine a dataset of past lending transactions from a peer-to-peer lending platform. The objective is to develop a model that can assess the creditworthiness of borrowers.
-
 I used a machine learning model to determine if loans are healthy (low-risk) or risky (high-risk) based on the loan status provided by the lending company.
-
 After analyzing the lending company's dataset, I developed a Logistic Regression Model that achieved an impressive accuracy score of 99%. However, when it comes to distinguishing high-risk loans, the model's recall value is lower 91% compared to its recall value for healthy loans (99%). This suggests that the model performs better at predicting loan status as healthy rather than identifying loan status as high-risk loans.
  The reason bihind of it is   the dataset has a huge  imbalance.  Where the majority of the data corresponds to 1 class label (in this case, healthy loans greatly outnumber hight_risk loans).
 
@@ -47,10 +41,7 @@ The accuracy score for both prediction models is really high at 99%. Looking at 
 
 ## Summary
 
-A lending company wants a model that accurately distinguishes between healthy and non-healthy loans to minimize potential costs. Misclassifying healthy loans as non-healthy can lead to customer loss, while misclassifying non-healthy loans as healthy can result in financial losses for the company.
-
-The Logistic Regression model trained with oversampled data performed better than the model trained with imbalanced data. The balanced dataset approach improved accuracy and recall, reducing errors in classifying non-healthy loans.
-
+A lending company wants a model that accurately distinguishes between healthy and non-healthy loans to minimize potential costs. Misclassifying healthy loans as non-healthy can lead to customer loss, while misclassifying non-healthy loans as healthy can result in financial losses for the company. The Logistic Regression model trained with oversampled data performed better than the model trained with imbalanced data. The balanced dataset approach improved accuracy and recall, reducing errors in classifying non-healthy loans.
 To mitigate risks, the lending company aims to minimize the occurrence of false positives, which represent cases where loans that are not financially sound are incorrectly identified as healthy:
 
 ## Machine Learning Model 1 with imbalanced data:
