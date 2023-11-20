@@ -35,10 +35,11 @@ Using bulleted lists, describe the balanced accuracy scores and the precision an
 
 * Machine Learning Model 2:
   * Description of Model 2 Accuracy, Precision, and Recall scores.
+
+ - The accuracy score for this model is also quite high at 99%. Looking at the confusion matrix, the oversampled data model did significantly better at predicting false negatives, meaning only 4 loans of 0 type were identified as negative.
+ - Similar to the previous model, the precision score for 0 loans was 100% and 84% for loan type 1.
+ - The recall score improved for hight_risk loans compared to the previous model(from 91% to 99%) as well as f1-score. Overall,the original model  was quite accurate but this model with oversampled data seems to be slightly better at predicting more accurately.
   
-The accuracy score for both prediction models is really high at 99%. Looking at the confusion matrix, the oversampled data model did significantly better at predicting false negatives, meaning only 4 loans were identified as negative. Similar to the previous model, the precision score for 0((healthy loan)) loans was 100% and 84% to loan type 1(high-risk loan). The recall score improved for unhealthy loans compared to the previous model(from 91% to 99%) as well as f1-score. Overall,the original model was quite accurate but this model with oversampled data seems to be slightly better at predicting more accurately.
-
-
 ## Summary
 
 A lending company wants a model that accurately distinguishes between healthy and non-healthy loans to minimize potential costs. Misclassifying healthy loans as non-healthy can lead to customer loss, while misclassifying non-healthy loans as healthy can result in financial losses for the company. The Logistic Regression model trained with oversampled data performed better than the model trained with imbalanced data. The balanced dataset approach improved accuracy and recall, reducing errors in classifying non-healthy loans.
